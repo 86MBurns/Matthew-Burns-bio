@@ -1,0 +1,16 @@
+header {
+    background-color: aqua;
+}
+
+main {
+    background: red;
+}
+
+main > div {
+    background-color: darkolivegreen;
+   color: yellow;
+}
+
+footer {
+    background-color: cyan;
+}

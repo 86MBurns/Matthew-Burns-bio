@@ -1,16 +1,47 @@
-
+* {
+    box-sizing: 25px;
+    flex-direction: row;
+}
 header {
+    size: 2%;
     background: grey;
+    text-align: left;
+    padding: 5px;
 }
 
-main > div {
-    padding: 5px;
-    background-color: cadetblue;
+header > p {
+    background-color: pink;
+    text-align:right;
+}
+
+.myphoto > img{
+    width: 10%;
+    padding: auto;
+    height: 165px;
+    border: 5px solid blue;
+
+}
+.myfamily > img{
+    place-items: center;
+    width: 20%;
+    padding: auto;
+    height: 20%;
+    border: 5px solid blue;
+}
+
+.proud {
+    text-align: center;
 }
 
 main{
     background: beige;
     color: red;
+}
+
+main > div { 
+    background-color: cadetblue;
+    padding: 5px;
+   
 }
 
 footer {

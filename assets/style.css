@@ -3,15 +3,16 @@ header {
     background: grey;
 }
 
-main {
-    background: red;
+main > div {
+    padding: 5px;
+    background-color: cadetblue;
 }
 
-main > div {
-    background-color: darkolivegreen;
-   color: yellow;
+main{
+    background: beige;
+    color: red;
 }
 
 footer {
-    background-color: cyan;
+    background-color: pink;
 }

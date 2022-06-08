@@ -1,20 +1,31 @@
 * {
+
     box-sizing: 25px;
     flex-direction: row;
 }
 header {
-    size: 2%;
+    display: flex;
+    justify-content: space-evenly;
     background: grey;
     text-align: left;
-    padding: 5px;
+    padding: 15px;
+    border: 15;
 }
 
-header > p {
+header > section {
+    flex: 1 0 200;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 5px;
+    border-style: double;
+    border-color: darkgreen;
     background-color: pink;
-    text-align:right;
+    text-align: center;
 }
 
 .myphoto > img{
+    box-sizing: inherit;
+    float: center;
     width: 10%;
     padding: auto;
     height: 165px;
@@ -39,9 +50,13 @@ main{
 }
 
 main > div { 
+    float: fixed;
     background-color: cadetblue;
-    padding: 5px;
-   
+    padding: 1px;
+}
+
+.values {
+    float: inline-end;
 }
 
 footer {

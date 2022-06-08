@@ -1,5 +1,4 @@
 * {
-    
     box-sizing: border-box;  
 }
 
@@ -13,23 +12,25 @@ body{
 }
 
 header {
-    font-size: larger;
-    display: flex;
-    justify-content: space-between;
-    background: skyblue;
+    border-width: 1px;
     padding: 10px;
+    float: inline-start;
+}
+h1{
+    text-align: center;
 }
 
 nav {
-    display: inline;
+    display: flex;
     padding: 15px;
     justify-content: space-between;
     background-color: skyblue;
     font-family: serif;
+    width: 100%;
+    float: inline-end;
+    border-style: solid ;
 }
-section{
-    width: 25%;
-}
+
 .accoplishments{ 
     margin: 2%;
     display: flex;
@@ -44,18 +45,18 @@ img{
     width: 100%;
 }
 
-@media screen and(max-width:992px) {
-    main{
+@media screen and(max-width: 992px) {
+    nav{
         width: 50%;
     }
 }
 
-@media screen and(max-width:768px) {
+@media screen and(max-width: 768px) {
     main{
         width: 100%;
     }
 }
-@media screen and(max-width:576px) {
+@media screen and(max-width: 556px) {
     main{
         width: 100%;
     }

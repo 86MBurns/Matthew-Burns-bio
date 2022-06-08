@@ -1,7 +1,8 @@
 * {
-    box-sizing: border-box;
     
+    box-sizing: border-box;  
 }
+
 body{
     word-wrap: inherit;
     display: flex;
@@ -10,78 +11,52 @@ body{
     min-height: 25vh;
     justify-content: space-between;
 }
+
 header {
     font-size: larger;
     display: flex;
     justify-content: space-between;
-    background: gray;
-    text-align: center;
-    padding: 10px;;
-    border: 15;
+    background: skyblue;
+    padding: 10px;
 }
 
 nav {
-    display: flex;
+    display: inline;
+    padding: 15px;
     justify-content: space-between;
-    border-color: darkgreen;
-    background-color: pink;
+    background-color: skyblue;
+    font-family: serif;
 }
-nav section{
-    font-size:1.5em;
-    flex: 1 0 100;
-    flex-grow: 1;
-    flex-shrink: 1;
-    border: 5px;
-    border-style: double;
-    text-decoration: solid;
-    text-align: center;
+section{
+    width: 25%;
 }
-main{
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    padding: 30px;
-    text-align: center;
-    float: fixed;
-    background-color: cadetblue;
-    padding: 1px;
-}
-
-.myphoto{
-    display: flex;
-    box-sizing: inherit;
-    float: center;
-    width: 10%;
-    padding: 0%;
-    height: 165px;
-    
-
-}
-
-h4{
-    font-size: larger;
-    text-align: center;
-}
-.myfamily {
+.accoplishments{ 
+    margin: 2%;
     display: flex;
     flex-wrap: wrap;
-    float: center;
-    width: 10%;
-    padding: 0%;
-    height: 165px;
+    justify-content: space-between;
+    background-color: aqua;
 }
 
-main{
+img{
     display: flex;
-    
+    height: 100%;
+    width: 100%;
 }
 
-.myfamily{
-    
+@media screen and(max-width:992px) {
+    main{
+        width: 50%;
+    }
 }
 
-
-footer {
-    background-color: pink;
+@media screen and(max-width:768px) {
+    main{
+        width: 100%;
+    }
 }
-
+@media screen and(max-width:576px) {
+    main{
+        width: 100%;
+    }
+}

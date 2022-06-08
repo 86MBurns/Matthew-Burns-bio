@@ -1,64 +1,87 @@
 * {
-
+    box-sizing: border-box;
+    
+}
+body{
+    word-wrap: inherit;
+    display: flex;
     box-sizing: 25px;
-    flex-direction: row;
+    flex-direction: column;
+    min-height: 25vh;
+    justify-content: space-between;
 }
 header {
+    font-size: larger;
     display: flex;
-    justify-content: space-evenly;
-    background: grey;
-    text-align: left;
-    padding: 15px;
+    justify-content: space-between;
+    background: gray;
+    text-align: center;
+    padding: 10px;;
     border: 15;
 }
 
-header > section {
-    flex: 1 0 200;
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-color: darkgreen;
+    background-color: pink;
+}
+nav section{
+    font-size:1.5em;
+    flex: 1 0 100;
     flex-grow: 1;
     flex-shrink: 1;
     border: 5px;
     border-style: double;
-    border-color: darkgreen;
-    background-color: pink;
+    text-decoration: solid;
     text-align: center;
 }
-
-.myphoto > img{
-    box-sizing: inherit;
-    float: center;
-    width: 10%;
-    padding: auto;
-    height: 165px;
-    border: 5px solid blue;
-
-}
-.myfamily > img{
-    place-items: center;
-    width: 20%;
-    padding: auto;
-    height: 20%;
-    border: 5px solid blue;
-}
-
-.proud {
-    text-align: center;
-}
-
 main{
-    background: beige;
-    color: red;
-}
-
-main > div { 
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
     float: fixed;
     background-color: cadetblue;
     padding: 1px;
 }
 
-.values {
-    float: inline-end;
+.myphoto{
+    display: flex;
+    box-sizing: inherit;
+    float: center;
+    width: 10%;
+    padding: 0%;
+    height: 165px;
+    
+
 }
+
+h4{
+    font-size: larger;
+    text-align: center;
+}
+.myfamily {
+    display: flex;
+    flex-wrap: wrap;
+    float: center;
+    width: 10%;
+    padding: 0%;
+    height: 165px;
+}
+
+main{
+    display: flex;
+    
+}
+
+.myfamily{
+    
+}
+
 
 footer {
     background-color: pink;
 }
+

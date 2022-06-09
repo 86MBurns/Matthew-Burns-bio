@@ -3,61 +3,72 @@
 }
 
 body{
-    word-wrap: inherit;
     display: flex;
-    box-sizing: 25px;
     flex-direction: column;
     min-height: 25vh;
     justify-content: space-between;
 }
 
 header {
-    border-width: 1px;
-    padding: 10px;
-    float: inline-start;
-}
-h1{
+    padding: 40px;
     text-align: center;
-}
+    background: cornsilk;
+  }
 
 nav {
     display: flex;
-    padding: 15px;
     justify-content: space-between;
-    background-color: skyblue;
-    font-family: serif;
-    width: 100%;
-    float: inline-end;
-    border-style: solid ;
+    margin: 5px;
+    border: 3px;
+    border-style: groove;
+    border-color: blanchedalmond;
+    padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
 }
 
-.accoplishments{ 
-    margin: 2%;
+main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: aqua;
+    flex-grow: 1;
 }
-
-img{
+section{
     display: flex;
-    height: 100%;
-    width: 100%;
+    flex: 0 0 400px;
+    background-color: pink;
+    border: solid;
+    border-style: double;
+    border-color: blue;
+    padding: 20px;
+}
+.proud{
+    padding-left: 10px;
+}
+.family{
+    padding-left: 10px;
+}
+img{
+    padding: 5px;
+    height: 140px;
+    background: cornsilk;
 }
 
-@media screen and(max-width: 992px) {
-    nav{
-        width: 50%;
-    }
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    background: orange;
+    text-align: center;
 }
 
-@media screen and(max-width: 768px) {
-    main{
-        width: 100%;
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
     }
-}
-@media screen and(max-width: 556px) {
-    main{
-        width: 100%;
+    
+    aside {
+      order: 2;
     }
 }
